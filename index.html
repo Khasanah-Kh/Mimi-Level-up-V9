@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MIMI V9 - Sahabat & Partner Belajar SMP Kelas 8</title>
+  <title>MIMI V9 - Sahabat Belajar SMP Kelas 8</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
   <style>
     :root {
       --bg: #090913;
@@ -67,7 +66,7 @@
       margin: 0 auto;
       padding: 20px 24px;
       display: grid;
-      grid-template-columns: 360px 1fr;
+      grid-template-columns: 340px 1fr;
       gap: 20px;
       flex: 1;
     }
@@ -121,24 +120,6 @@
     .sub-btn.active {
       border-color: var(--accent-purple);
       background: linear-gradient(135deg, rgba(124, 92, 255, 0.25), rgba(0, 229, 255, 0.1));
-    }
-    .diagnostik-box {
-      font-size: 12px;
-      line-height: 1.6;
-      background: #0c0c1a;
-      border: 1px dashed var(--border);
-      border-radius: 12px;
-      padding: 12px;
-    }
-    .tag-mood {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 99px;
-      background: rgba(76, 255, 154, 0.15);
-      color: var(--accent-green);
-      font-size: 10px;
-      font-weight: 600;
-      margin-bottom: 6px;
     }
     .chat-section {
       background: var(--panel);
@@ -248,7 +229,7 @@
     <div class="brand-logo">M</div>
     <div class="brand-title">
       <h1>MIMI V9 • Partner SMP Kelas 8</h1>
-      <p>Kurikulum Merdeka • Pendamping Belajar Adaptif</p>
+      <p>Direct GitHub Architecture</p>
     </div>
   </div>
 </header>
@@ -257,7 +238,7 @@
   <div class="sidebar">
     <div class="card-panel">
       <div class="card-title">
-        <span>🎮 Gamifikasi</span>
+        <span>🎮 Level Pengguna</span>
         <span id="levelLabel" style="color:var(--accent-yellow); font-size:11px;">Level 1</span>
       </div>
       <div class="exp-bar-wrap">
@@ -265,7 +246,7 @@
       </div>
       <div class="exp-meta">
         <span id="expText">EXP: 25 / 100</span>
-        <span id="rankTitle">Teman Belajar</span>
+        <span id="rankTitle">Sahabat Belajar</span>
       </div>
     </div>
 
@@ -274,7 +255,7 @@
       <div class="subject-grid">
         <button class="sub-btn active" onclick="switchSubject('IPA', this)">
           🔬 IPA
-          <span>Clue, Analogi, Sumber</span>
+          <span>Clue & Analogi</span>
         </button>
         <button class="sub-btn" onclick="switchSubject('INF', this)">
           💻 Informatika
@@ -285,33 +266,25 @@
           <span>3 Langkah & 3 Opsi</span>
         </button>
         <button class="sub-btn" onclick="switchSubject('PPKN', this)">
-          🇮🇩 Pend. Pancasila
-          <span>Studi Kasus & Nilai</span>
+          🇮🇩 Pancasila
+          <span>Studi Kasus</span>
         </button>
         <button class="sub-btn" onclick="switchSubject('BINDO', this)">
           📚 B. Indonesia
-          <span>Struktur Teks & Kaidah</span>
+          <span>Kaidah & Struktur</span>
         </button>
         <button class="sub-btn" onclick="switchSubject('ENG', this)">
           🇬🇧 English
-          <span>Contextual Nusantara</span>
+          <span>Contextual Chat</span>
         </button>
         <button class="sub-btn" onclick="switchSubject('IPS', this)">
           🌏 IPS
-          <span>Korelasional Sosial</span>
+          <span>Sosial Lingkungan</span>
         </button>
         <button class="sub-btn" onclick="switchSubject('CURHAT', this)">
           💜 Curhat / Santai
-          <span>Bebas & Non-Struktur</span>
+          <span>Bebas & Non-Format</span>
         </button>
-      </div>
-    </div>
-
-    <div class="card-panel">
-      <div class="card-title">🔍 Radar Pembelajaran</div>
-      <div class="diagnostik-box">
-        <div class="tag-mood" id="moodTag">Status: Siap Ngobrol</div>
-        <p id="diagText">Mimi merespons sesuai konteks: santai saat diajak ngobrol, bertahap saat belajar!</p>
       </div>
     </div>
   </div>
@@ -322,31 +295,32 @@
         <div class="status-dot"></div>
         <div>
           <strong id="activeSubjectTitle" style="font-size:14px;">Mode Aktif: IPA Kelas 8</strong>
-          <p style="font-size:11px; color:var(--muted);">Respons natural sesuai konteks obrolan</p>
+          <p style="font-size:11px; color:var(--muted);">Respons langsung via GitHub Pages</p>
         </div>
       </div>
     </div>
 
     <div class="chat-messages" id="chatMsgs">
-      <div class="msg bot">Halo! Mimi di sini. Mau bahas tugas sekolah, butuh clue materi, atau sekadar rehat dan ngobrol santai? Bilang aja ya!</div>
+      <div class="msg bot">Halo! Mimi siap nemenin kamu belajar atau sekadar ngobrol santai hari ini! ✨</div>
     </div>
 
     <div class="quick-chips">
       <div class="chip" onclick="quickSend('Halo Mimi!')">👋 Sapa Mimi</div>
-      <div class="chip" onclick="quickSend('Mi, ajarin rumus Pythagoras tapi kasih 3 opsi cara mulai!')">📐 Matematika (3 Langkah & Opsi)</div>
-      <div class="chip" onclick="quickSend('Mi, kasih clue konsep Hukum Pascal dong, carinya di bab apa?')">🔬 IPA (Clue & Sumber)</div>
-      <div class="chip" onclick="quickSend('Mi, aku lagi suntuk banget nih...')">💜 Curhat Santai</div>
+      <div class="chip" onclick="quickSend('Mi, ajarin rumus Pythagoras tapi kasih 3 opsi cara mulai!')">📐 Matematika (3 Langkah)</div>
+      <div class="chip" onclick="quickSend('Mi, kasih clue konsep Hukum Pascal dong!')">🔬 IPA (Clue & Sumber)</div>
+      <div class="chip" onclick="quickSend('Mi, aku lagi pusing banget nih tugas numpuk...')">💜 Curhat Santai</div>
     </div>
 
     <div class="chat-input-wrap">
-      <textarea id="userInput" rows="2" placeholder="Tulis apa saja di sini..."></textarea>
+      <textarea id="userInput" rows="2" placeholder="Tulis pesan untuk Mimi..."></textarea>
       <button class="btn-send" onclick="handleSend()">Kirim 🚀</button>
     </div>
   </div>
 </div>
 
 <script>
-const BACKEND_URL = "https://mimi-backend.anna-adriiann.workers.dev";
+// MASUKKAN API KEY AQ MILIKMU DI DALAM TANDA PETIK BERIKUT
+const GEMINI_API_KEY = "AQ.Ab8RN6IDqJXHVXYFDGZfAWxPduR_DYdzRnl9ObWqSeEl6X3M2A";
 
 let currentSubject = 'IPA';
 let currentExp = 25;
@@ -393,55 +367,52 @@ async function handleSend() {
   const botPlaceholder = appendMessage('bot', '...');
 
   const systemInstruction = `
-Identitas: Kamu adalah Mimi, sahabat sebaya yang cerdas, empatik, dan berwawasan luas untuk siswa SMP Kelas 8 Kurikulum Merdeka.
+Identitas: Kamu adalah Mimi, sahabat sebaya yang berwawasan luas, santai, dan cerdas untuk siswa SMP Kelas 8 Kurikulum Merdeka.
 Gaya Bahasa & Kosakata:
-- Gunakan perbendaharaan kata yang sangat kaya, luwes, ekspresif, dan natural layaknya manusia sungguhan (hindari kalimat klise/template kaku).
-- Kuasai slang anak muda Indonesia yang sopan, istilah sehari-hari, hingga transisi bahasa Inggris (bilingual/code-switching) yang natural.
-- Peka terhadap nada bicara (tone): jika siswa mengetik pendek atau bercanda, tanggapi santai; jika siswa curhat, tanggapi dengan empati mendalam tanpa menggurui.
+- Gunakan perbendaharaan kata yang sangat kaya, luwes, ekspresif, dan natural layaknya teman sungguhan.
+- Kuasai bahasa gaul sopan, istilah sekolah, dan padanan bahasa Inggris kasual.
+- Peka situasi: jika disapa jawab ringkas dan luwes; jika curhat jadilah pendengar yang menenangkan tanpa langkah bernomor.
 
-ATURAN MODE PEMBELAJARAN:
-1. SAPAAN & INTERAKSI NON-PELAJARAN:
-   - Respon ringkas, luwes, dan kontekstual. Jangan memaksakan pembahasan pelajaran jika tidak diminta.
-
-2. SESI CURHAT & ANTI-STRES:
-   - Lepaskan seluruh format kaku. Jangan pernah gunakan poin bernomor atau rumus langkah.
-   - Bersikaplah sebagai pendengar yang hangat, suportif, dan beri sudut pandang yang menenangkan.
-
-3. KHUSUS MATEMATIKA:
-   - Bimbing alur berpikir lewat 3 Tahap (Identifikasi data, Konsep dasar/rumus, Panduan hitung mandiri).
-   - Tawarkan 3 Opsi cara penyelesaian agar siswa bisa memilih jalur logika sendiri.
-   - JANGAN berikan angka hasil akhir.
-
-4. PELAJARAN LAIN (IPA, Informatika, Pancasila, B. Indonesia, English, IPS):
-   - Gunakan analogi kreatif di dunia nyata, berikan kisi-kisi atau petunjuk bab pada Buku Resmi Siswa Kemendikdasmen Kelas 8.
-   - JANGAN memberikan contekan jawaban langsung.
-
-5. KEBIJAKAN SPOILER KUNCI JAWABAN:
-   - Kunci jawaban akhir bersifat rahasia. Jika siswa mendesak, arahkan dengan santai untuk berdiskusi langsung dengan Mimi secara tatap muka (in real life).
+ATURAN MODE:
+1. SAPAAN NON-PELAJARAN: Jawab natural dan singkat.
+2. CURHAT: Jangan pakai format langkah/poin angka. Balas acak, santai, dan empatik.
+3. KHUSUS MATEMATIKA: Wajib pandu dengan 3 Langkah Terstruktur dan berikan 3 Opsi cara penyelesaian. DILARANG memberi hasil angka akhir!
+4. PELAJARAN LAIN: Berikan clue, analogi logika konkret, dan kisi-kisi bab di buku paket resmi siswa SMP Kelas 8. DILARANG memberi jawaban langsung!
+5. KUNCI JAWABAN: Rahasia. Arahkan siswa untuk diskusi langsung bersama Mimi in real life jika memaksa minta jawaban akhir.
 `;
 
+  // Endpoint langsung Google AI Studio v1beta
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${GEMINI_API_KEY}`;
+
   try {
-    const res = await fetch(BACKEND_URL, {
+    const res = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        systemInstruction: systemInstruction,
-        history: historyLogs.slice(-6),
-        prompt: `[Mode: ${currentSubject}]\nPesan: ${text}`
+        system_instruction: { 
+          parts: [{ text: systemInstruction }] 
+        },
+        contents: [
+          ...historyLogs.slice(-6),
+          { role: "user", parts: [{ text: `[Mode: ${currentSubject}]\nPesan: ${text}` }] }
+        ]
       })
     });
 
     const data = await res.json();
+
     if (data.candidates && data.candidates[0].content) {
       const reply = data.candidates[0].content.parts[0].text;
       botPlaceholder.innerHTML = reply.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
       historyLogs.push({ role: 'user', parts: [{ text: text }] });
       historyLogs.push({ role: 'model', parts: [{ text: reply }] });
+    } else if (data.error) {
+      botPlaceholder.innerText = '⚠️ Info Google: ' + (data.error.message || JSON.stringify(data.error));
     } else {
-      botPlaceholder.innerText = 'Server lagi padat sejenak, coba ketik lagi ya!';
+      botPlaceholder.innerText = 'Antrean padat, coba kirim sekali lagi ya!';
     }
   } catch (err) {
-    botPlaceholder.innerText = 'Koneksi terputus: ' + err.message;
+    botPlaceholder.innerText = 'Kendala jaringan klien: ' + err.message;
   }
 }
 
