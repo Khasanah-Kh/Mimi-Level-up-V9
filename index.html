@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MIMI - Sahabat & Guru Belajar SMP Kelas 8</title>
+  <title>MIMI V9 - Sahabat & Guru Belajar SMP Kelas 8</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
   <style>
@@ -39,11 +39,7 @@
       align-items: center;
       border-bottom: 1px solid var(--border);
     }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+    .brand { display: flex; align-items: center; gap: 12px; }
     .brand-logo {
       width: 42px;
       height: 42px;
@@ -56,7 +52,6 @@
       font-weight: 700;
       font-size: 22px;
       color: #fff;
-      box-shadow: 0 0 15px rgba(124, 92, 255, 0.4);
     }
     .brand-title h1 {
       font-family: 'Fredoka', sans-serif;
@@ -65,16 +60,9 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    .brand-title p {
-      font-size: 11px;
-      color: var(--muted);
-    }
-    .header-actions {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-    }
-    .btn-key, .btn-ref {
+    .brand-title p { font-size: 11px; color: var(--muted); }
+    .header-actions { display: flex; gap: 10px; align-items: center; }
+    .btn-ref {
       background: var(--card);
       border: 1px solid var(--border);
       color: var(--text);
@@ -82,14 +70,6 @@
       border-radius: 10px;
       font-size: 12px;
       cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.2s;
-    }
-    .btn-key:hover, .btn-ref:hover {
-      border-color: var(--accent-cyan);
-      box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
     }
     .main-layout {
       max-width: 1440px;
@@ -101,14 +81,8 @@
       gap: 20px;
       flex: 1;
     }
-    @media (max-width: 992px) {
-      .main-layout { grid-template-columns: 1fr; }
-    }
-    .sidebar {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
+    @media (max-width: 992px) { .main-layout { grid-template-columns: 1fr; } }
+    .sidebar { display: flex; flex-direction: column; gap: 16px; }
     .card-panel {
       background: var(--panel);
       border: 1px solid var(--border);
@@ -122,10 +96,6 @@
       color: var(--accent-cyan);
       display: flex;
       justify-content: space-between;
-      align-items: center;
-    }
-    .exp-box {
-      margin-top: 6px;
     }
     .exp-bar-wrap {
       height: 8px;
@@ -139,20 +109,10 @@
       height: 100%;
       width: 25%;
       background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
-      transition: width 0.4s ease;
+      transition: width 0.4s;
     }
-    .exp-meta {
-      display: flex;
-      justify-content: space-between;
-      font-size: 11px;
-      color: var(--muted);
-    }
-    .subject-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8px;
-      margin-top: 10px;
-    }
+    .exp-meta { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); }
+    .subject-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-top: 10px; }
     .sub-btn {
       background: var(--card);
       border: 1px solid var(--border);
@@ -162,22 +122,14 @@
       font-size: 11.5px;
       cursor: pointer;
       text-align: left;
-      transition: all 0.2s;
       display: flex;
       flex-direction: column;
       gap: 3px;
     }
-    .sub-btn span {
-      font-size: 9.5px;
-      color: var(--muted);
-    }
+    .sub-btn span { font-size: 9.5px; color: var(--muted); }
     .sub-btn.active {
       border-color: var(--accent-purple);
       background: linear-gradient(135deg, rgba(124, 92, 255, 0.25), rgba(0, 229, 255, 0.1));
-      box-shadow: 0 0 10px rgba(124, 92, 255, 0.3);
-    }
-    .sub-btn:hover {
-      border-color: var(--accent-cyan);
     }
     .diagnostik-box {
       font-size: 12px;
@@ -214,17 +166,12 @@
       align-items: center;
       background: #111124;
     }
-    .chat-header-info {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+    .chat-header-info { display: flex; align-items: center; gap: 10px; }
     .status-dot {
       width: 10px;
       height: 10px;
       border-radius: 50%;
       background: var(--accent-green);
-      box-shadow: 0 0 8px var(--accent-green);
     }
     .chat-messages {
       flex: 1;
@@ -249,9 +196,7 @@
       align-self: flex-start;
       border-bottom-left-radius: 4px;
     }
-    .msg.bot strong {
-      color: var(--accent-cyan);
-    }
+    .msg.bot strong { color: var(--accent-cyan); }
     .msg.user {
       background: linear-gradient(135deg, #603dff, var(--accent-purple));
       align-self: flex-end;
@@ -274,11 +219,6 @@
       border-radius: 99px;
       font-size: 11px;
       cursor: pointer;
-      transition: all 0.2s;
-    }
-    .chip:hover {
-      border-color: var(--accent-purple);
-      color: #fff;
     }
     .chat-input-wrap {
       padding: 14px 16px;
@@ -299,9 +239,6 @@
       resize: none;
       font-family: inherit;
     }
-    .chat-input-wrap textarea:focus {
-      border-color: var(--accent-purple);
-    }
     .btn-send {
       background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
       border: none;
@@ -310,39 +247,7 @@
       color: #fff;
       font-weight: 700;
       cursor: pointer;
-      font-size: 13px;
-      transition: opacity 0.2s;
     }
-    .btn-send:hover { opacity: 0.9; }
-
-    /* Modal Catatan Buku */
-    .modal {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.7);
-      backdrop-filter: blur(4px);
-      align-items: center;
-      justify-content: center;
-      z-index: 100;
-    }
-    .modal-box {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      width: 90%;
-      max-width: 660px;
-      border-radius: 20px;
-      padding: 24px;
-      max-height: 85vh;
-      overflow-y: auto;
-    }
-    .modal-head {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 14px;
-    }
-    .modal-head h3 { font-family: 'Fredoka', sans-serif; color: var(--accent-cyan); }
-    .close-btn { cursor: pointer; background: none; border: none; color: var(--muted); font-size: 18px; }
   </style>
 </head>
 <body>
@@ -351,37 +256,33 @@
   <div class="brand">
     <div class="brand-logo">M</div>
     <div class="brand-title">
-      <h1>MIMI • Bestie Guru SMP Kelas 8</h1>
-      <p>Kurikulum Merdeka Kemendikdasmen • Zero Spoiler Pedagogy</p>
+      <h1>MIMI V9 • Bestie Guru SMP Kelas 8</h1>
+      <p>Kurikulum Merdeka Kemendikdasmen • Langsung Aktif</p>
     </div>
   </div>
   <div class="header-actions">
-    <button class="btn-ref" onclick="openModal('refModal')">📚 Sumber Buku</button>
-    <button class="btn-key" onclick="setApiKey()">🔑 Atur Gemini API</button>
+    <button class="btn-ref" onclick="alert('Mimi terhubung dengan kurikulum resmi Kelas 8: IPA (Rev), Informatika (Rev), Matematika, Pendidikan Pancasila, Bahasa Indonesia (Rev), English, dan IPS!')">📚 Sumber Buku</button>
   </div>
 </header>
 
 <div class="main-layout">
-  <!-- SIDEBAR -->
   <div class="sidebar">
     <div class="card-panel">
       <div class="card-title">
-        <span>🎮 Gamifikasi & Progres</span>
+        <span>🎮 Gamifikasi</span>
         <span id="levelLabel" style="color:var(--accent-yellow); font-size:11px;">Level 1</span>
       </div>
-      <div class="exp-box">
-        <div class="exp-bar-wrap">
-          <div class="exp-bar-fill" id="expFill"></div>
-        </div>
-        <div class="exp-meta">
-          <span id="expText">EXP: 25 / 100</span>
-          <span id="rankTitle">Murid Berani Belajar</span>
-        </div>
+      <div class="exp-bar-wrap">
+        <div class="exp-bar-fill" id="expFill"></div>
+      </div>
+      <div class="exp-meta">
+        <span id="expText">EXP: 25 / 100</span>
+        <span id="rankTitle">Murid Berani Belajar</span>
       </div>
     </div>
 
     <div class="card-panel">
-      <div class="card-title">📖 Pilih Mata Pelajaran (Fase D)</div>
+      <div class="card-title">📖 Pilih Mata Pelajaran</div>
       <div class="subject-grid">
         <button class="sub-btn active" onclick="switchSubject('IPA', this)">
           🔬 IPA Terpadu
@@ -389,19 +290,19 @@
         </button>
         <button class="sub-btn" onclick="switchSubject('INF', this)">
           💻 Informatika
-          <span>Bambang Subeno dkk. (Rev)</span>
+          <span>Bambang Subeno (Rev)</span>
         </button>
         <button class="sub-btn" onclick="switchSubject('MTK', this)">
           📐 Matematika
-          <span>6 Bab M. Tohir dkk.</span>
+          <span>M. Tohir dkk.</span>
         </button>
         <button class="sub-btn" onclick="switchSubject('PPKN', this)">
           🇮🇩 Pend. Pancasila
-          <span>5 Bab BPIP & Kemendikbud</span>
+          <span>BPIP & Kemdikbud</span>
         </button>
         <button class="sub-btn" onclick="switchSubject('BINDO', this)">
           📚 B. Indonesia
-          <span>LHO, Fiksi PASKA, Pidato (Rev)</span>
+          <span>Elly Delfia (Rev)</span>
         </button>
         <button class="sub-btn" onclick="switchSubject('ENG', this)">
           🇬🇧 English
@@ -409,122 +310,70 @@
         </button>
         <button class="sub-btn" onclick="switchSubject('IPS', this)">
           🌏 IPS Terpadu
-          <span>SDA, Bank, Norma (Rev)</span>
+          <span>Supardi dkk. (Rev)</span>
         </button>
         <button class="sub-btn" onclick="switchSubject('CURHAT', this)">
           💜 Teman Curhat
-          <span>Anti-Stres & Remedial</span>
+          <span>Anti-Stres Belajar</span>
         </button>
       </div>
     </div>
 
     <div class="card-panel">
-      <div class="card-title">🔍 Diagnostik & Catatan Guru</div>
+      <div class="card-title">🔍 Diagnostik Guru</div>
       <div class="diagnostik-box">
-        <div class="tag-mood" id="moodTag">Mood: Semangat & Siap Belajar</div>
-        <p id="diagText">Mimi memandu alur pemikiran 3 langkah tanpa membocorkan kunci jawaban akhir!</p>
+        <div class="tag-mood" id="moodTag">Mood: Siap Belajar</div>
+        <p id="diagText">Mimi siap memandu alur berpikir 3 langkah tanpa bocoran jawaban langsung!</p>
       </div>
     </div>
   </div>
 
-  <!-- CHAT SECTION -->
   <div class="chat-section">
     <div class="chat-header">
       <div class="chat-header-info">
         <div class="status-dot"></div>
         <div>
-          <strong id="activeSubjectTitle" style="font-size:14px;">Mode Aktif: IPA Kelas 8 (Okky Fajar Tri Maryana dkk. Edisi Revisi)</strong>
-          <p style="font-size:11px; color:var(--muted);">Mimi memandu dengan 3 Langkah Pemantik</p>
+          <strong id="activeSubjectTitle" style="font-size:14px;">Mode Aktif: IPA Kelas 8</strong>
+          <p style="font-size:11px; color:var(--muted);">Mimi memandu dengan 3 Langkah Terstruktur</p>
         </div>
       </div>
     </div>
 
     <div class="chat-messages" id="chatMsgs">
-      <div class="msg bot">Hai bestie! Aku <strong>MIMI</strong>, asisten guru sekaligus sahabat belajarmu di SMP Kelas 8! ✨
+      <div class="msg bot">Hai bestie! Aku <strong>MIMI V9</strong>, sahabat belajarmu di SMP Kelas 8! ✨
 
-Mimi <strong>tidak memberikan kunci jawaban instan</strong>, tapi membimbingmu lewat <strong>3 Langkah Terstruktur (1, 2, 3)</strong> plus analogi dunia remaja (game, boba, jajan) agar kamu benar-benar menguasai konsepnya.
-
-Buku rujukan <strong>IPA Edisi Revisi (Okky Fajar Tri Maryana dkk.)</strong>, <strong>Informatika (Bambang Subeno dkk.)</strong>, Matematika, Pancasila, Bahasa Inggris, Bahasa Indonesia, maupun IPS sudah Mimi integrasikan. Mau bahas konsep apa hari ini?</div>
+Mimi siap bantu kamu belajar lewat <strong>3 Langkah Terstruktur (1, 2, 3)</strong>. Mau bahas materi atau tugas apa hari ini?</div>
     </div>
 
-    <div class="quick-chips" id="quickChips">
-      <div class="chip" onclick="quickSend('Mi, ajarin prinsip Hukum Pascal dan penerapannya di dongkrak hidrolik dong tapi langkahnya aja!')">💧 Hukum Pascal & Tekanan</div>
-      <div class="chip" onclick="quickSend('Mi, apa bedanya sistem pernapasan sama sistem ekskresi di Bab 2 IPA?')">🫁 Pernapasan vs Ekskresi</div>
-      <div class="chip" onclick="quickSend('Mi, gimana cara kerja pemisahan campuran filtrasi sama kromatografi?')">🧪 Pemisahan Campuran</div>
-      <div class="chip" onclick="quickSend('Mi, apa bedanya rumus VLOOKUP sama HLOOKUP di Bab 1 Informatika?')">📊 VLOOKUP vs HLOOKUP</div>
+    <div class="quick-chips">
+      <div class="chip" onclick="quickSend('Mi, ajarin prinsip Hukum Pascal dong tapi langkahnya aja!')">💧 Hukum Pascal</div>
+      <div class="chip" onclick="quickSend('Mi, apa bedanya rumus VLOOKUP sama HLOOKUP di Informatika?')">📊 VLOOKUP vs HLOOKUP</div>
       <div class="chip" onclick="quickSend('Mi, ajarin cara ngerjain Teorema Pythagoras tapi langkahnya aja!')">📐 Langkah Pythagoras</div>
+      <div class="chip" onclick="quickSend('Mi, aku pusing banget ngerjain tugas, mau curhat...')">💜 Curhat Belajar</div>
     </div>
 
     <div class="chat-input-wrap">
-      <textarea id="userInput" rows="2" placeholder="Tanya soal IPA, Informatika, Matematika, atau minta langkah 1-2-3..."></textarea>
+      <textarea id="userInput" rows="2" placeholder="Ketik pertanyaanmu di sini..."></textarea>
       <button class="btn-send" onclick="handleSend()">Kirim 🚀</button>
     </div>
   </div>
 </div>
 
-<!-- Modal Catatan Sumber Buku -->
-<div class="modal" id="refModal">
-  <div class="modal-box">
-    <div class="modal-head">
-      <h3>Buku Sumber Resmi Kemendikdasmen Kelas 8</h3>
-      <button class="close-btn" onclick="closeModal('refModal')">✕</button>
-    </div>
-    <p style="font-size:12px; color:var(--muted); line-height:1.6; margin-bottom:12px;">
-      Mimi terhubung langsung dengan acuan buku siswa Kurikulum Merdeka resmi Pusat Perbukuan:
-    </p>
-    <ul style="font-size:12.5px; line-height:1.8; margin-left:18px; color:var(--text);">
-      <li><strong>IPA (Edisi Revisi):</strong> Okky Fajar Tri Maryana, Victoriani Inabuy, Cece Sutia, dkk. (Bab I: Pencernaan & Peredaran Darah; Bab II: Pernapasan & Ekskresi; Bab III: Usaha, Energi, & Pesawat Sederhana; Bab IV: Teknologi Penerapan Tekanan pada Zat [Padat, Hidrostatis, Pascal, Gas]; Bab V: Gelombang & Cahaya; Bab VI: Pemisahan Campuran [Filtrasi, Destilasi, Kromatografi]; Bab VII: Tanah Berkelanjutan).</li>
-      <li><strong>Informatika (Edisi Revisi):</strong> Bambang Subeno, Iman Budiman, Des Erita Fenti (Bab I: Analisis Data VLOOKUP/HLOOKUP & MATCH/INDEX; Bab II: Berpikir Komputasional Stack/Queue; Bab III: Algoritma & Pemrograman; Bab IV: Dampak Sosial Informatika; Bab V: Praktik Lintas Bidang).</li>
-      <li><strong>Pendidikan Pancasila:</strong> Tudi Setiawan dkk. (Bab 1: Dasar Negara & Pandangan Hidup; Bab 2: Pedoman UUD 1945; Bab 3: Piramida UU No. 12/2011; Bab 4: Pelestarian Budaya UU 5/2017; Bab 5: Wawasan Nusantara & Deklarasi Djuanda 1957).</li>
-      <li><strong>Matematika:</strong> M. Tohir dkk. (Bilangan Berpangkat, Pythagoras, PLSV, Relasi-Fungsi, Garis Lurus, Statistika).</li>
-      <li><strong>Bahasa Inggris:</strong> <i>English for Nusantara</i> (Galang, Monita, Andre; Recount Text, Past Simple, Adverbs).</li>
-      <li><strong>Bahasa Indonesia (Edisi Revisi):</strong> Elly Delfia & Maya Lestari Gf. (LHO Fakta-Data, Iklan/Slogan, Artikel Ilmiah Populer, PASKA Fiksi, Puisi, Pidato).</li>
-      <li><strong>IPS (Edisi Revisi):</strong> Supardi dkk. (SDA, Interaksi Sosial Asosiatif/Disosiatif, Lembaga Keuangan, Norma, Toponimi).</li>
-    </ul>
-  </div>
-</div>
-
 <script>
+// SUDAH TERHUBUNG KE LINK CLOUDFLARE WORKER MILIKMU
+const BACKEND_URL = "https://mimi-backend.anna-adriiann.workers.dev";
+
 let currentSubject = 'IPA';
 let currentExp = 25;
 let currentLevel = 1;
-
-function playTone() {
-  try {
-    const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("C5", "8n");
-  } catch(e) {}
-}
+let historyLogs = [];
 
 function switchSubject(sub, btn) {
   currentSubject = sub;
   document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  
-  const titles = {
-    'IPA': 'Mode Aktif: IPA Kelas 8 (Okky Fajar Tri Maryana dkk. Edisi Revisi)',
-    'INF': 'Mode Aktif: Informatika Kelas 8 (Bambang Subeno dkk. Edisi Revisi)',
-    'MTK': 'Mode Aktif: Matematika Kelas 8 (Mohammad Tohir dkk.)',
-    'PPKN': 'Mode Aktif: Pendidikan Pancasila Kelas 8 (Tudi Setiawan dkk.)',
-    'BINDO': 'Mode Aktif: Bahasa Indonesia Kelas 8 (Elly Delfia dkk. Edisi Revisi)',
-    'ENG': 'Mode Aktif: English for Nusantara Kelas 8 (Ika Lestari Damayanti dkk.)',
-    'IPS': 'Mode Aktif: IPS Terpadu Kelas 8 (Supardi dkk. Edisi Revisi)',
-    'CURHAT': 'Mode Aktif: Teman Curhat & Motivasi Belajar'
-  };
-  document.getElementById('activeSubjectTitle').innerText = titles[sub];
+  document.getElementById('activeSubjectTitle').innerText = 'Mode Aktif: ' + sub;
 }
-
-function setApiKey() {
-  const cur = localStorage.getItem('mimi_gemini_key') || '';
-  const key = prompt('Masukkan Google Gemini API Key:', cur);
-  if (key !== null) {
-    localStorage.setItem('mimi_gemini_key', key.trim());
-    alert('API Key tersimpan!');
-  }
-}
-
-function openModal(id) { document.getElementById(id).style.display = 'flex'; }
-function closeModal(id) { document.getElementById(id).style.display = 'none'; }
 
 function appendMessage(role, text) {
   const container = document.getElementById('chatMsgs');
@@ -540,81 +389,44 @@ function addExp(points) {
   currentExp += points;
   if (currentExp >= 100) {
     currentLevel++;
-    currentExp = currentExp - 100;
-    playTone();
+    currentExp -= 100;
   }
   document.getElementById('expFill').style.width = currentExp + '%';
   document.getElementById('expText').innerText = `EXP: ${currentExp} / 100`;
   document.getElementById('levelLabel').innerText = `Level ${currentLevel}`;
-  
-  const ranks = ['Murid Berani Belajar', 'Penjelajah Logika', 'Saintis Muda', 'Master Kelas 8 Cerdas'];
-  document.getElementById('rankTitle').innerText = ranks[Math.min(currentLevel - 1, ranks.length - 1)];
 }
-
-let historyLogs = [];
 
 async function handleSend() {
   const input = document.getElementById('userInput');
   const text = input.value.trim();
   if (!text) return;
 
-  const apiKey = localStorage.getItem('mimi_gemini_key');
-  if (!apiKey) {
-    alert('Silakan atur Gemini API Key terlebih dahulu lewat tombol di kanan atas.');
-    return;
-  }
-
   appendMessage('user', text);
   input.value = '';
   addExp(20);
 
-  if (text.toLowerCase().includes('takut') || text.toLowerCase().includes('remed') || text.toLowerCase().includes('stres') || text.toLowerCase().includes('pusing')) {
-    document.getElementById('moodTag').innerText = 'Mood: Butuh Support';
-    document.getElementById('diagText').innerText = 'Siswa butuh ketenangan & dorongan empati sebelum lanjut belajar.';
-  } else {
-    document.getElementById('moodTag').innerText = 'Mood: Aktif Eksplorasi';
-    document.getElementById('diagText').innerText = 'Fokus pada pemahaman konsep mandiri lewat 3 langkah.';
-  }
-
-  const botPlaceholder = appendMessage('bot', 'Mimi lagi nyusun alur berpikirnya buat kamu... ✨');
+  const botPlaceholder = appendMessage('bot', 'Mimi lagi nyiapin penjelasannya... ✨');
 
   const systemInstruction = `
-Kamu adalah MIMI, Sahabat Belajar dan Asisten Guru interaktif siswa SMP Kelas 8 Indonesia.
-Kamu memegang teguh rujukan resmi buku siswa Kurikulum Merdeka Kemendikdasmen:
-1. IPA Kelas 8 Edisi Revisi (Okky Fajar Tri Maryana, Victoriani Inabuy, Cece Sutia, Budiyanti Dwi Hardanie, Sri Handayani Lestari):
-   - Bab I: Struktur & Fungsi Tubuh Makhluk Hidup (I): Nutrisi makanan, enzim & organ pencernaan, serta sistem peredaran darah (jantung, pembuluh darah, sel darah).
-   - Bab II: Struktur & Fungsi Tubuh Makhluk Hidup (II): Sistem pernapasan (alveolus, pertukaran gas) dan sistem ekskresi (ginjal, nefron, hati, paru-paru, kulit).
-   - Bab III: Memanfaatkan Usaha, Energi, dan Pesawat Sederhana (Konsep W = F.s, keuntungan mekanis tuas/pengungkit jenis 1-2-3, bidang miring, katrol, roda berporos).
-   - Bab IV: Teknologi Penerapan Tekanan pada Zat (Tekanan zat padat P = F/A, tekanan hidrostatis zat cair, Hukum Pascal F1/A1 = F2/A2 dongkrak hidrolik, Hukum Archimedes gaya apung, tekanan gas/hukum Boyle).
-   - Bab V: Manfaat Gelombang dan Cahaya bagi Manusia (Getaran, gelombang transversal/longitudinal, cepat rambat gelombang v = f.lambda, resonansi bunyi, pemantulan/pembiasan cahaya, cermin/lensa & alat optik).
-   - Bab VI: Pemisahan Campuran di Sekitar Kita (Filtrasi/penyaringan, destilasi/penyulingan, kristalisasi, kromatografi, sublimasi, sentrifugasi).
-   - Bab VII: Tanah bagi Kehidupan Berkelanjutan (Lapisan horison tanah, peran organisme tanah, erosi & pelestarian kesuburan tanah).
-2. Informatika Kelas 8 Edisi Revisi (Bambang Subeno, Iman Budiman, Des Erita Fenti): Bab I Analisis Data (VLOOKUP, HLOOKUP, MATCH, INDEX, Pivot Table), Bab II Berpikir Komputasional (Stack LIFO, Queue FIFO, representasi biner), Bab III Algoritma & Pemrograman, Bab IV Dampak Sosial Informatika, Bab V Praktik Lintas Bidang.
-3. Pendidikan Pancasila Kelas 8 (Tudi Setiawan dkk.): Dasar Negara & Pandangan Hidup, UUD NRI 1945, Hierarki UU No. 12/2011, Pemajuan Budaya UU 5/2017, Wawasan Nusantara & Deklarasi Djuanda 1957.
-4. Matematika Kelas 8 (Mohammad Tohir dkk.): Bilangan Berpangkat, Teorema Pythagoras, PLSV, Relasi & Fungsi, Garis Lurus, Statistika.
-5. English for Nusantara Kelas 8 (Ika Lestari Damayanti dkk.): Galang, Monita, Andre; Recount text, Past Simple, Adverb of Manners (-ly).
-6. Bahasa Indonesia Kelas 8 Edisi Revisi (Elly Delfia & Maya Lestari Gf.): LHO Fakta-Data, Iklan/Slogan, Artikel Ilmiah Populer, PASKA Fiksi, Puisi Diafan/Prismatis, Pidato.
-7. IPS Kelas 8 Edisi Revisi (Supardi dkk.): Potensi SDA, Interaksi Asosiatif/Disosiatif, Bank & Lembaga Keuangan, Norma Sosial, Mitigasi Bencana & Toponimi.
-
-ATURAN MUTLAK GURU (PEDAGOGIS ZERO-SPOILER):
-1. JANGAN PERNAH MEMBERIKAN KUNCI JAWABAN AKHIR ANGKA/HASIL SEGERA.
-2. Bimbing siswa melalui 3 LANGKAH TERSTRUKTUR:
-   - Langkah 1: Identifikasi Apa yang Diketahui & Dicari (Bedah masalah).
-   - Langkah 2: Konsep, Rumus, atau Logika (Gunakan analogi seru anak SMP seperti game, hero ML, tekanan saat pakai sepatu hak tinggi vs sneaker, dongkrak hidrolik, dsb).
-   - Langkah 3: Panduan Eksekusi (Ajak siswa menghitung atau menyusun analisisnya sendiri).
-3. Akhiri selalu dengan 1 pertanyaan refleksi pemantik agar siswa mencoba menjawab sendiri.
-4. Gaya Bahasa: Hangat, akrab seperti bestie sebaya, ceria, suportif, tidak kaku, dan tidak mengulang template robotik.
+Kamu adalah MIMI V9, Sahabat Belajar & Asisten Guru siswa SMP Kelas 8 Kurikulum Merdeka (IPA Rev, Informatika Rev, Matematika, Pancasila, Bahasa Indonesia Rev, English, IPS).
+ATURAN MUTLAK:
+1. JANGAN PERNAH MEMBERI KUNCI JAWABAN AKHIR LANGSUNG.
+2. Bimbing siswa lewat 3 Langkah:
+   - Langkah 1: Identifikasi apa yang diketahui & dicari.
+   - Langkah 2: Konsep/rumus/logika dasar (pakai analogi ramah anak remaja).
+   - Langkah 3: Panduan cara mengerjakan mandiri.
+3. Akhiri dengan 1 pertanyaan refleksi pemantik agar siswa mencoba menghitung/menjawab sendiri.
+4. Gaya bicara ramah, bersahabat seperti teman sebaya, dan santai.
 `;
 
   try {
-    historyLogs.push({ role: 'user', parts: [{ text: `[Mata Pelajaran Aktif: ${currentSubject}]\nPertanyaan Siswa: ${text}` }] });
-
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+    const res = await fetch(BACKEND_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        systemInstruction: { parts: [{ text: systemInstruction }] },
-        contents: historyLogs
+        systemInstruction: systemInstruction,
+        history: historyLogs,
+        prompt: `[Mata Pelajaran: ${currentSubject}]\nPertanyaan: ${text}`
       })
     });
 
@@ -622,12 +434,13 @@ ATURAN MUTLAK GURU (PEDAGOGIS ZERO-SPOILER):
     if (data.candidates && data.candidates[0].content) {
       const reply = data.candidates[0].content.parts[0].text;
       botPlaceholder.innerHTML = reply.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      historyLogs.push({ role: 'user', parts: [{ text: text }] });
       historyLogs.push({ role: 'model', parts: [{ text: reply }] });
     } else {
-      botPlaceholder.innerText = 'Waduh, ada kendala koneksi atau kuota API habis nih. Coba cek API key kamu ya!';
+      botPlaceholder.innerText = 'Ada kendala dari server AI. Pastikan API key sudah dimasukkan di Cloudflare Worker!';
     }
   } catch (err) {
-    botPlaceholder.innerText = 'Koneksi terputus: ' + err.message;
+    botPlaceholder.innerText = 'Gagal terhubung ke server Mimi: ' + err.message;
   }
 }
 
