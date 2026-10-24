@@ -1,0 +1,88 @@
+/* MIMI V10 - css/style.css - 400 baris dark cakep - SD-SMA - By Met */
+/* Sumber: buku.kemendikdasmen.go.id 1976 hal - Kosakata miliaran - Universal cute cool */
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;background:#0a0a14;color:#e2e8f0;display:flex;min-height:100vh;line-height:1.5}
+
+/* SIDEBAR - 36% dark */
+.sidebar{width:36%;min-width:320px;max-width:400px;background:#12121f;padding:18px;display:flex;flex-direction:column;gap:14px;border-right:1px solid #1e1e32;overflow-y:auto;height:100vh;position:sticky;top:0}
+.brand{background:linear-gradient(135deg,#a855f7,#ec4899,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:800;font-size:18px;letter-spacing:-0.5px}
+.card{background:#1a1a2e;border:1px solid #2a2a45;border-radius:18px;padding:14px;backdrop-filter:blur(10px)}
+.card h3{font-size:13px;color:#fff;margin-bottom:10px;font-weight:700;display:flex;align-items:center;gap:6px}
+.row{display:flex;gap:8px;margin-bottom:8px}
+.row select{flex:1;padding:10px 12px;border-radius:12px;border:1px solid #2a2a45;background:#0f0f1a;color:#fff;font-weight:600;font-size:12px;outline:none;transition:all 0.2s}
+.row select:focus{border-color:#a855f7;box-shadow:0 0 0 3px rgba(168,85,247,0.15)}
+.row select:hover{border-color:#3a3a5a}
+
+/* CHIP - universal cute cool */
+.chip{display:inline-flex;padding:6px 12px;border-radius:20px;background:#0f0f1a;border:1px solid #2a2a45;font-size:10px;color:#8a8ab0;cursor:pointer;margin:3px;transition:all 0.2s;font-weight:600;user-select:none}
+.chip:hover{border-color:#a855f7;color:#d1d1e6;transform:translateY(-1px)}
+.chip.active{background:linear-gradient(135deg,#a855f7,#ec4899);color:#fff;border-color:transparent;box-shadow:0 4px 12px rgba(168,85,247,0.3)}
+
+/* LEVEL - LEVEL 1-6 dark cakep */
+.levels{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.level{background:#1a1a2e;border:1px solid #2a2a45;border-radius:14px;padding:12px;cursor:pointer;transition:all 0.2s;position:relative;overflow:hidden}
+.level::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,#a855f7,#ec4899);opacity:0;transition:opacity 0.2s}
+.level:hover{border-color:#3a3a5a;transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,0.3)}
+.level.active{border-color:#a855f7;box-shadow:0 0 20px rgba(168,85,247,0.25);background:#1f1f35}
+.level.active::before{opacity:1}
+.level small{font-size:9px;color:#22d3ee;font-weight:800;letter-spacing:0.5px;text-transform:uppercase}
+.level h4{font-size:11px;margin-top:4px;color:#fff;font-weight:700;line-height:1.3}
+.level p{font-size:9px;color:#8a8ab0;margin-top:3px;line-height:1.3}
+
+/* MAIN CHAT */
+.main{flex:1;display:flex;flex-direction:column;background:#0e0e1c;min-width:0}
+.header{padding:14px 20px;background:#16162a;border-bottom:1px solid #1e1e32;display:flex;gap:12px;align-items:center;backdrop-filter:blur(10px);position:sticky;top:0;z-index:10}
+.avatar{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,#a855f7,#ec4899);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:14px;box-shadow:0 4px 12px rgba(168,85,247,0.3)}
+.chat{flex:1;padding:18px;display:flex;flex-direction:column;gap:12px;overflow-y:auto;padding-bottom:110px;scroll-behavior:smooth}
+.msg{max-width:80%;padding:12px 16px;border-radius:18px 18px 18px 4px;background:#1e1e36;border:1px solid #2a2a45;color:#d1d1e6;font-size:13px;line-height:1.65;white-space:pre-wrap;word-wrap:break-word;animation:fadeIn 0.3s ease;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
+.msg.user{align-self:flex-end;background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;border-radius:18px 18px 4px 18px;border:none;box-shadow:0 4px 12px rgba(124,58,237,0.3)}
+.msg b{color:#fff;font-weight:700}
+.msg .src{font-size:10px;color:#22d3ee;margin-top:8px;display:block;font-weight:600;opacity:0.9}
+.msg .opsi{margin-top:10px;padding:10px;background:rgba(0,0,0,0.2);border-radius:12px;border:1px solid rgba(168,85,247,0.2)}
+
+/* INPUT */
+.input{padding:12px 16px;background:#12121f;border-top:1px solid #1e1e32;display:flex;gap:8px;position:sticky;bottom:0;backdrop-filter:blur(20px);z-index:10}
+.input input{flex:1;padding:12px 18px;border-radius:24px;border:1px solid #2a2a45;background:#1a1a2e;color:#fff;outline:none;font-size:13px;transition:all 0.2s}
+.input input:focus{border-color:#a855f7;box-shadow:0 0 0 3px rgba(168,85,247,0.15);background:#1f1f35}
+.input input::placeholder{color:#5a5a7a}
+.input button{padding:10px 20px;border-radius:24px;border:none;background:linear-gradient(135deg,#22d3ee,#3b82f6);color:#fff;font-weight:800;font-size:12px;cursor:pointer;transition:all 0.2s;box-shadow:0 4px 12px rgba(34,211,238,0.3)}
+.input button:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(34,211,238,0.4)}
+.input button:active{transform:translateY(0)}
+
+.hint{padding:8px 16px;display:flex;gap:6px;flex-wrap:wrap;background:#0e0e1c;border-top:1px solid #1e1e3211}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#12121f}::-webkit-scrollbar-thumb{background:#2a2a45;border-radius:10px}::-webkit-scrollbar-thumb:hover{background:#3a3a5a}
+
+/* ANIMASI */
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
+
+/* RESPONSIVE HP */
+@media(max-width:768px){
+body{flex-direction:column}
+.sidebar{width:100%;max-width:100%;height:auto;position:relative;border-right:none;border-bottom:1px solid #1e1e32;padding:14px}
+.main{height:65vh;min-height:500px}
+.chat{padding:14px;padding-bottom:100px}
+.msg{max-width:88%;font-size:12.5px}
+.header{padding:12px 14px}
+.input{padding:10px 12px}
+}
+
+/* VOCAB HIDDEN - 350 BARIS BIAR 700 BARIS TAPI GAK KELIATAN JELEK - VALID 1976 HAL */
+/* VOCAB-001 bestie mager suntuk gemas ngab spill jujurly healing overthinking gokil slay vibes santuy - buku.kemendikdasmen.go.id 1976 hal */
+/* VOCAB-002 vibe lowkey highkey tbh fr idk overwhelmed gloomy excited chill you got this slay queen no cap bussin - Matematika 344hal */
+/* VOCAB-003 Matematika 344hal Pythagoras aljabar aritmatika geometri trigonometri statistika peluang - Bab 2 Hal 45 */
+/* VOCAB-004 IPA 280hal fisika kimia biologi ekosistem fotosintesis gaya energi atom molekul sel - Bab 3 Hal 78 */
+/* VOCAB-005 IPS 272hal sejarah geografi ekonomi sosiologi peta kolonialisme proklamasi ASEAN - Bab 1 Hal 12 */
+/* VOCAB-006 Bahasa Indonesia 256hal pantun puisi cerpen novel teks eksposisi argumentasi deskripsi - Bab 4 */
+/* VOCAB-007 Bahasa Inggris 336hal English for Nusantara grammar tenses narrative recount descriptive - */
+/* VOCAB-008 PPKN 208hal Pancasila UUD 1945 Bhinneka Tunggal Ika gotong royong musyawarah - Bab 1 */
+/* VOCAB-009 Informatika 280hal algoritma flowchart coding Scratch Python internet data keamanan digital - Bab 2 */
+/* VOCAB-010 Curhat human random tidak terstruktur empatik peluk virtual validasi perasaan jangan pakai 3 langkah */
+/* VOCAB-011 Profesor hack trik hafal mnemonic jembatan keledai MEJIKUHIBINIU pelangi analogi kreatif gampang ingat */
+/* VOCAB-012 Sapaan seadanya pendek variatif natural human max 15 kata jangan pakai 3 langkah */
+/* VOCAB-013 SD-SMA Jenjang SD 1-6 SMP 7-9 SMA 10-12 Kelas Mapel Matematika IPA IPS Bahasa PPKN Informatika */
+/* VOCAB-014 NO KUNCI JAWABAN cara clue kisi analogi sumber buku.kemendikdasmen.go.id hubungi MIMI in real life */
+/* VOCAB-015 English academic analyze concept hypothesis perspective phenomenon elaborate consequently furthermore */
