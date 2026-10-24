@@ -1,0 +1,19 @@
+{
+  "total_buku": 7,
+  "total_halaman": 1976,
+  "sumber_wajib": [
+    "buku.kemendikdasmen.go.id",
+    "kemdikbud.go.id",
+    "merdekabelajar.kemdikbud.go.id"
+  ],
+  "buku": [
+    { "jenjang": "SMP", "kelas": 8, "mapel": "Matematika", "halaman": 344, "bab": { "2": "Bilangan Berpangkat Hal 30-50", "3": "Teorema Pythagoras Hal 55-80", "4": "Persamaan Linear Hal 85-110" }, "link": "buku.kemendikdasmen.go.id - Matematika Kelas 8 Kurikulum Merdeka" },
+    { "jenjang": "SMP", "kelas": 8, "mapel": "IPA", "halaman": 280, "bab": { "1": "Sel & Mikroskop Hal 10-30", "2": "Fotosintesis Hal 35-60" } },
+    { "jenjang": "SMP", "kelas": 8, "mapel": "IPS", "halaman": 272 },
+    { "jenjang": "SMP", "kelas": 8, "mapel": "Bahasa Indonesia", "halaman": 256 },
+    { "jenjang": "SMP", "kelas": 8, "mapel": "Bahasa Inggris", "halaman": 336, "judul": "English for Nusantara" },
+    { "jenjang": "SMP", "kelas": 8, "mapel": "PPKN", "halaman": 208 },
+    { "jenjang": "SMP", "kelas": 8, "mapel": "Informatika", "halaman": 280 }
+  ],
+  "format_sumber": "Sumber: Buku {mapel} Kelas {kelas} Kurikulum Merdeka Bab {bab} Hal {hal} atau Sumber: {website} - Materi {topik}"
+}
