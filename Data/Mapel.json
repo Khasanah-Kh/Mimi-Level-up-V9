@@ -1,0 +1,11 @@
+{
+  "SD": ["Matematika","IPAS","Bahasa Indonesia","Bahasa Inggris","PPKN","Seni","PJOK","Informatika"],
+  "SMP": ["Matematika","IPA","IPS","Bahasa Indonesia","Bahasa Inggris","PPKN","Informatika","Prakarya","Seni"],
+  "SMA": ["Matematika","Fisika","Kimia","Biologi","Sejarah","Geografi","Ekonomi","Sosiologi","Bahasa Indonesia","Bahasa Inggris","PPKN","Informatika"],
+  "aturan": {
+    "Matematika": "3 Langkah + 3 Opsi A B C - no hasil akhir",
+    "Lainnya": "Clue + Kisi + Sumber + Analogi - jangan 3 langkah",
+    "Curhat": "Human Random tidak terstruktur - validasi perasaan",
+    "Sapaan": "Jawab seadanya pendek variatif - max 15 kata"
+  }
+}
